@@ -1,0 +1,7 @@
+arrow
+beautifulsoup4
+icalendar
+lxml
+pandas
+requests
+tabulate
