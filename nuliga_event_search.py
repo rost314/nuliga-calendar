@@ -137,14 +137,13 @@ def process_season_clubs(season, clubs, output_dir: Path):
                 write_calender(team_data['calendar'], ics_file)
             except Exception as error:
                 print(error)
-        break
 
 
 if __name__ == '__main__':
     SEASON = 'Sommer 2023'
     CLUBS = {
-        'TC Alfeld Mannschaften': 'https://tnb.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/clubTeams?club=16473',
-        'TSV Gronau Mannschaften': 'https://tnb.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/clubTeams?club=16486',
+        'TC Alfeld': 'https://tnb.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/clubTeams?club=16473',
+        'TSV Gronau': 'https://tnb.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/clubTeams?club=16486',
     }
 
     process_season_clubs(season=SEASON, clubs=CLUBS, output_dir=Path('.'))
