@@ -1,0 +1,9 @@
+[Unit]
+Description=nuliga event to google calendar timer
+
+[Timer]
+OnBootSec=3m
+OnUnitInactiveSec=8h
+
+[Install]
+WantedBy=basic.target

@@ -1,7 +1,10 @@
-arrow
 beautifulsoup4
 icalendar
 lxml
 pandas
 requests
 tabulate
+tzdata
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

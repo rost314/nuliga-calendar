@@ -1,0 +1,12 @@
+[Unit]
+Description=nuliga event to google calendar
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/repositories/nuliga-calendar/
+ExecStart=%h/.local/bin/uv run --with-requirements requirements.txt nuliga_event_search.py
+SyslogIdentifier=nuliga_event_search
+Environment="ABRT_IGNORE_PYTHON=1"
+
+[Install]
+WantedBy=default.target
